@@ -1,0 +1,330 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f5f5f5;
+}
+
+/* NAVBAR */
+.navbar {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background: #6a0dad;
+  color: white;
+  padding: 10px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+/* LADO IZQUIERDO */
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+/* TEXTO */
+.nav-left h1 {
+  font-size: 18px;
+  margin: 0;
+}
+
+
+/* SUBTITULO */
+.subtitulo {
+  font-size: 12px;
+  color: #ffcc99;
+  margin-top: 2px;
+}
+
+/* BOTONES DERECHA */
+.nav-right button {
+  background: #ff6600;
+  margin-left: 10px;
+}
+
+.navbar button {
+  background: #ff6600;
+  margin-left: 10px;
+}
+
+/* CONTENIDO */
+.container {
+  max-width: 1300px; /* 👈 más ancho */
+  margin: auto;
+  padding: 30px;
+}
+
+/* BOTONES */
+button {
+  background: #6a0dad;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #ff6600;
+}
+
+/* FORM */
+form {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+}
+
+/* INPUT */
+input {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+}
+
+/* CARD */
+.card {
+  background: white;
+  padding: 15px;
+  border-radius: 12px;
+  margin: 10px 0;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.news-card {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.news-img {
+  width: 300px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.gallery-img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+p {
+  line-height: 1.5;
+}
+
+/* GRID */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+}
+
+/* LOGIN */
+.center-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+
+
+/* ADMIN */
+.dashboard {
+  display: grid;
+  grid-template-columns: 250px 1fr;
+}
+
+.sidebar {
+  background: #6a0dad;
+  color: white;
+  height: 100vh;
+  padding: 20px;
+}
+
+.dashboard-content {
+  padding: 20px;
+}
+
+.section {
+  margin-top: 50px;
+}
+
+
+/* NAVBAR MODERNA */
+.navbar {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  backdrop-filter: blur(10px);
+  background: rgba(106, 13, 173, 0.8);
+  color: white;
+  padding: 10px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* IZQUIERDA */
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+/* LOGO ANIMADO */
+.logo {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+.logo:hover {
+  transform: rotate(10deg) scale(1.1);
+}
+
+/* SUBTITULO */
+.subtitulo {
+  font-size: 12px;
+  color: #ffcc99;
+}
+
+/* BOTONES */
+.nav-right button {
+  background: #ff6600;
+  margin-left: 10px;
+  transition: 0.3s;
+}
+
+.nav-right button:hover {
+  transform: scale(1.1);
+}
+
+/* HEADER PORTADA */
+.header {
+  height: 60vh;
+  background: url('/imagenes/portada.jpg') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* OVERLAY OSCURO */
+.header-overlay {
+  background: rgba(0,0,0,0.5);
+  padding: 40px;
+  border-radius: 15px;
+  text-align: center;
+  color: white;
+}
+
+/* TEXTO HEADER */
+.header-overlay h1 {
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+
+.header-overlay p {
+  font-size: 20px;
+}
+
+/* ANIMACIÓN ENTRADA */
+.header-overlay {
+  animation: fadeIn 1.5s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* 🌙 MODO OSCURO */
+
+body.dark {
+  background: #121212;
+  color: #eee;
+}
+
+/* NAVBAR */
+body.dark .navbar {
+  background: rgba(30, 30, 30, 0.9);
+}
+
+/* TARJETAS */
+body.dark .card {
+  background: #1e1e1e;
+  color: #eee;
+}
+
+/* FORM */
+body.dark form {
+  background: #1e1e1e;
+}
+
+/* INPUTS */
+body.dark input {
+  background: #2a2a2a;
+  color: white;
+  border: 1px solid #444;
+}
+
+/* BOTONES */
+body.dark button {
+  background: #ff6600;
+}
+
+body.dark button:hover {
+  background: #ff8533;
+}
+
+/* SIDEBAR ADMIN */
+body.dark .sidebar {
+  background: #1e1e1e;
+}
+
+/* HEADER */
+body.dark .header-overlay {
+  background: rgba(0,0,0,0.7);
+}
+
+/* TEXTO */
+body.dark h1,
+body.dark h2,
+body.dark h3 {
+  color: #ffcc99;
+}
+
+* {
+  transition: background 0.3s ease, color 0.3s ease, border 0.3s ease;
+}
