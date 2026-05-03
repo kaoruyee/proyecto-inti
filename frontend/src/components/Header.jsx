@@ -2,8 +2,8 @@ function Header() {
   return (
     <div className="header">
       <div className="header-overlay">
-        <h1>Inti Pacsi</h1>
-        <p>Raíces que bailan, cultura que vive</p>
+        <h1>Escuelita Andina Inti Pacsi</h1>
+        <p>Tradición, educación y folclor para la comunidad.</p>
       </div>
     </div>
   );

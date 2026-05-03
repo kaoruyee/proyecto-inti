@@ -11,7 +11,7 @@ function Navbar({ darkMode, setDarkMode }) {
 
         <div>
           <h1>Inti Pacsi</h1>
-          <p className="subtitulo">Folclore en movimiento</p>
+          <p className="subtitulo">Cultura de Pueblos Originarios</p>
         </div>
       </div>
 

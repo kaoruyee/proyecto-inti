@@ -9,3 +9,7 @@ class FichaViewSet(viewsets.ModelViewSet):
 class NoticiaViewSet(viewsets.ModelViewSet):
     queryset = Noticia.objects.all()
     serializer_class = NoticiaSerializer
+
+class NoticiaViewSet(viewsets.ModelViewSet):
+    queryset = Noticia.objects.all()
+    serializer_class = NoticiaSerializer
